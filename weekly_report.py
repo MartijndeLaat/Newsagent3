@@ -14,7 +14,7 @@ from openai import OpenAI
 client_oa = OpenAI(api_key=OPENAI_API_KEY) if OPENAI_API_KEY else OpenAI()
 
 def main():
-    full_report = "Weekly Client Insights
+    full_report = "Weekly Client Insights\n\n"
 
 "
     for client in CLIENTS:
