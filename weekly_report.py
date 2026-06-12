@@ -27,8 +27,8 @@ def main():
             analyses.append(analysis)
         talking_points = ""
         section = build_report(client, analyses, articles, talking_points)
-        full_report += section + "
-"
+        full_report += section + "\n"
+        
     if GRAPH_TOKEN and RECIPIENT_EMAIL:
         send_email(GRAPH_TOKEN, full_report, RECIPIENT_EMAIL)
     else:
